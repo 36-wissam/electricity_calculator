@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة فاتورة الكهرباء</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                <div>
+                    <h1>⚡ حاسبة فاتورة الكهرباء</h1>
+                    <p>احسب تكلفة استهلاك الكهرباء الشهرية</p>
+                </div>
+                <div class="toggle-container">
+                    <div class="toggle" id="darkModeToggle">
+                        <div class="toggle-thumb"></div>
+                    </div>
+                </div>
+
+
+            
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="card">
+                <h2 class="card-title">
+                    <span class="icon">⚡</span>
+                    الاستهلاك بالكيلوواط ساعة
+                </h2>
+                
+                <div class="slider-container">
+                    <div class="slider-label">
+                        <span>الاستهلاك الشهري:</span>
+                        <span class="consumption-value" id="consumptionValue">1000 ك.و.س</span>
+                    </div>
+                    <input type="range" min="0" max="5000" value="1000" class="slider" id="consumptionSlider">
+                    <div class="slider-range-labels">
+
+                        <span>5000</span>
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="total-cost">
+                <h3 id="totalCost">0 دينار عراقي</h3>
+                <p id="periodText">التكلفة الشهرية الإجمالية</p>
+            </div>
+
+
+
+                <div class="toggle-container">
+                    <span>حساب نصف شهر (15 يوم)</span>
+                    <div class="toggle" id="halfMonthToggle">
+                        <div class="toggle-thumb"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">
+                    <span class="icon">📊</span>
+                    تفصيل التكلفة حسب الشرائح
+                </h2>
+                <div class="breakdown" id="breakdown"></div>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">
+                    <span class="icon">💡</span>
+                    متوسط استهلاك الأجهزة المنزلية
+                </h2>
+                <div class="tips">
+                    <div class="tip-item"><span>ثلاجة عادية</span><span>144 ك.و.س/شهر</span></div>
+                    <div class="tip-item"><span>مكيف هواء (1.5 طن)</span><span>360 ك.و.س/شهر</span></div>
+                    <div class="tip-item"><span>غسالة ملابس</span><span>60 ك.و.س/شهر</span></div>
+                    <div class="tip-item"><span>تلفزيون LED</span><span>36 ك.و.س/شهر</span></div>
+                    <div class="tip-item"><span>إضاءة LED للمنزل</span><span>48 ك.و.س/شهر</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
