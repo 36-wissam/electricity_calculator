@@ -15,7 +15,6 @@ This is a responsive Arabic-language electricity bill calculator designed for mo
 - `index.html` – HTML structure and layout.
 - `style.css` – Styles and responsive design.
 - `script.js` – JavaScript logic for interaction and calculations.
-- `README.md` – Project overview.
 
 ## How to Use
 
